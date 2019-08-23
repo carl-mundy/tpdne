@@ -7,5 +7,6 @@ __version__ = "0.0.1"
 from .tpdne import *
 
 __all__ = [
+    "tpdne_bytes"
     "tpdne_base64",
 ]
