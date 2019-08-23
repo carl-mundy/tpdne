@@ -4,8 +4,6 @@ tpdne
 .. image:: https://travis-ci.com/carl-mundy/tpdne.svg?branch=master
     :target: https://travis-ci.com/carl-mundy/tpdne
 
-Get a face that doesn't exist
-
 
 Quickstart
 ==========
@@ -23,6 +21,13 @@ Here is a simple example:
 .. code-block:: python
 
     import tpdne
-    # Fill this section in with the common use-case.
+    image = tpdne.tpdne_base64()
 
-The `API Reference <http://tpdne.readthedocs.io>`_ provides API-level documentation.
+Or, if being used within a Jupyter Notebook:
+
+.. code-block:: python
+
+    import tpdne
+    from Ipython.display import Image
+
+    Image(data=tpdne_base64())
