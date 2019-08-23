@@ -28,6 +28,7 @@ Or, if being used within a Jupyter Notebook:
 .. code-block:: python
 
     import tpdne
-    from Ipython.display import Image
+    from IPython.display import Image, Markdown
 
-    Image(data=tpdne.tpdne_base64())
+    Image(data=tpdne.tpdne_bytes())
+    Markdown('<img src="data:image/png;base64,{}" />'.format(tpdne.tpdne_base64()))
