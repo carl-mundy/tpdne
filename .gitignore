@@ -108,3 +108,7 @@ venv.bak/
 
 # VSCode
 .vscode/
+
+# Notebooks
+*.ipynb
+*.ipynb_checkpoints

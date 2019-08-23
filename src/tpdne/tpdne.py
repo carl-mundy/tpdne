@@ -26,8 +26,12 @@ def _request_person(*r_args, **r_kwargs) -> 'requests.Request':
         **r_kwargs
     )
 
+def tpdne_bytes() -> 'bytes':
+    r = _request_person()
+    return r.content
+
 def tpdne_base64() -> 'str':
-    """Get a person that doesn't exist in a base64-encoded image
+    """Get a person that doesn't exist in a base64-encoded string
 
     Args:
         None
@@ -36,5 +40,5 @@ def tpdne_base64() -> 'str':
         base64 string
     """
 
-    r = _request_person()
-    return base64.encodebytes(r.content)
+    img_bytes = tpdne_bytes()
+    return base64.b64encode(img_bytes).decode('utf-8')
