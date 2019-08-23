@@ -21,9 +21,6 @@ with open(init_file, 'r') as f:
 with open('README.rst', 'r') as f:
     readme = f.read()
 
-with open('CHANGELOG.rst', 'r') as f:
-    changes = f.read()
-
 def parse_requirements(filename):
     ''' Load requirements from a pip requirements file '''
     with open(filename, 'r') as fd:
@@ -41,7 +38,7 @@ if __name__ == '__main__':
     setup(
         name='tpdne',
         description='Get a face that does not exist',
-        long_description='\n\n'.join([readme, changes]),
+        long_description='\n\n'.join([readme]),
         license='MIT license',
         url='https://github.com/carl-mundy/tpdne',
         version=version,
