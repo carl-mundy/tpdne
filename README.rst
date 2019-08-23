@@ -1,6 +1,9 @@
 tpdne
 #####
 
+.. image:: https://travis-ci.com/carl-mundy/tpdne.svg?branch=master
+    :target: https://travis-ci.com/carl-mundy/tpdne
+
 Get a face that doesn't exist
 
 
