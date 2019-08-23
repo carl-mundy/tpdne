@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest<=5.0.1
+pytest-coverage
+wheel
+-e .
