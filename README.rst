@@ -30,4 +30,4 @@ Or, if being used within a Jupyter Notebook:
     import tpdne
     from Ipython.display import Image
 
-    Image(data=tpdne_base64())
+    Image(data=tpdne.tpdne_base64())
