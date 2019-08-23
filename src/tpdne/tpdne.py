@@ -5,7 +5,7 @@ import requests
 from tpdne import __version__
 
 
-def _request_person() -> 'requests.Request':
+def _request_person(*r_args, **r_kwargs) -> 'requests.Request':
     """Request a new person that doesn't exist
 
     Args:
@@ -16,12 +16,14 @@ def _request_person() -> 'requests.Request':
     """
 
     return requests.get(
-        "https://thispersondoesnotexist.com/image",
+        *r_args,
+        url="https://thispersondoesnotexist.com/image",
         stream=True,
         headers={
             'Accept-Encoding': 'gzip, deflate, br',
             'User-Agent': 'tpdne/{}'.format(__version__)
-        }
+        },
+        **r_kwargs
     )
 
 def tpdne_base64() -> 'str':
