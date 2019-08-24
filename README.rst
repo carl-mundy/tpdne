@@ -4,6 +4,9 @@ tpdne
 .. image:: https://travis-ci.com/carl-mundy/tpdne.svg?branch=master
     :target: https://travis-ci.com/carl-mundy/tpdne
     :alt: Build Status
+.. image:: https://coveralls.io/repos/github/carl-mundy/tpdne/badge.svg?branch=master
+    :target: https://coveralls.io/github/carl-mundy/tpdne?branch=master
+    :alt: Code Coverage
 .. image:: https://api.codeclimate.com/v1/badges/494ceedc7d595e8991fd/maintainability
    :target: https://codeclimate.com/github/carl-mundy/tpdne/maintainability
    :alt: Maintainability
