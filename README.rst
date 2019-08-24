@@ -3,7 +3,10 @@ tpdne
 
 .. image:: https://travis-ci.com/carl-mundy/tpdne.svg?branch=master
     :target: https://travis-ci.com/carl-mundy/tpdne
-
+    :alt: Build Status
+.. image:: https://api.codeclimate.com/v1/badges/494ceedc7d595e8991fd/maintainability
+   :target: https://codeclimate.com/github/carl-mundy/tpdne/maintainability
+   :alt: Maintainability
 
 Quickstart
 ==========
